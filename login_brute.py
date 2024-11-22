@@ -2,9 +2,9 @@ import requests
 import sys
 
 def check_email(email):
-    url = 'http://enum.thm/labs/verbose_login/functions.php'  # Location of the login function
+    url = '[Login endpoint example : http://evilsite.com/login.php]'  # Location of the login function
     headers = {
-        'Host': 'enum.thm',
+        'Host': '[host domain or IP ]',
         'User-Agent': 'Mozilla/5.0 (X11; Linux aarch64; rv:102.0) Gecko/20100101 Firefox/102.0',
         'Accept': 'application/json, text/javascript, */*; q=0.01',
         'Accept-Language': 'en-US,en;q=0.5',
@@ -13,7 +13,7 @@ def check_email(email):
         'X-Requested-With': 'XMLHttpRequest',
         'Origin': 'http://enum.thm',
         'Connection': 'close',
-        'Referer': 'http://enum.thm/labs/verbose_login/',
+        'Referer': '[referer example http://enum.thm/labs/verbose_login/]',
     }
     data = {
         'username': email,
